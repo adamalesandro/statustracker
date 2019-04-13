@@ -1,7 +1,7 @@
 <template>
      <v-card>
         <v-card-title class="pa-0 pl-2">
-            <span class="ticker"><strong>{{ListItem}}</strong></span>
+            <span class=""><strong>{{ListItem}}</strong></span>
             <v-spacer></v-spacer>
             <v-btn icon @click="removeItem()">
                 <v-icon>close</v-icon>
@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         removeItem() {
-            EventBus.$emit("removeItem", this.security);
+            EventBus.$emit("removeItem", this.ListItem);
         }
     }
 }

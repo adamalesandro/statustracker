@@ -1,8 +1,8 @@
 export const store = {
     state: {
-        securities: []
+        listItems: []
     },
-    addSecurity (security) {
-        this.state.securities.push(security);
+    addListItem (listItem) {
+        this.state.listeItems.push(listItem);
     }
 };
