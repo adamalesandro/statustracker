@@ -1,7 +1,9 @@
 <template>
     <div class="list">
-        <h1 class="text-xs-center blue-grey--text text--darken-2">{{List.ListName}}</h1>
-        <v-btn @click.native="showListNameEditDialog">EDIT</v-btn>
+        <h1 class="text-xs-center blue-grey--text text--darken-2">
+            {{List.ListName}}
+            <v-btn icon @click.native="showListNameEditDialog"><v-icon color="grey">edit</v-icon></v-btn>
+        </h1>
         <ListItemContainer :ListItems="List.ListItems" />
         <v-dialog v-model="dialog" max-width="500px">
             <v-card>

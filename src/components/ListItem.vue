@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         removeItem() {
-            EventBus.$emit("removeItem", this.ListItem);
+            EventBus.$emit("removeItemFromList", this.$parent.$parent.List.ListName, this.ListItem);
         }
     }
 }

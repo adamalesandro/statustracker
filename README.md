@@ -1,4 +1,4 @@
-# watchlist
+# Status Tracker
 
 ## Project setup
 ```
